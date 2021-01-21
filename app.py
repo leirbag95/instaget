@@ -10,7 +10,6 @@ if __name__ == "__main__":
         username = str(input("username: "))
     except Exception as e:
         raise Exception(e)
-    session_id = str(input("Session ID: "))
     instaget = InstaGet(username=username)
     profile = instaget.get_profile()
     print(profile)
